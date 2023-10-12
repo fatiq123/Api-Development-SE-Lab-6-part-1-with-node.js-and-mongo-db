@@ -22,26 +22,6 @@
 
 
 
-// const express = require('express');
-// const app = express();
-// const PORT = 3000; // Choose any port you prefer
-
-
-
-
-// const middleware = require('middleware');
-
-
-// const body_parser = require('body-parser');
-// require('./utils/db');
-
-
-// app.use(body_parser.json());
-
-
-
-
-
 
 // app.use(express.json());
 
@@ -118,21 +98,6 @@ app.use(bodyParser.json());
 // apis
 app.use('/api', productRoutes);
 
-
-
-// API # 1
-app.get('/welcome', (req, res) => {
-  res.send('Welcome.');
-});
-
-
-
-// API # 2
-app.get('/user', (req, res) => {
-    res.send('Hello World.');
-  });
-  
-
-  app.listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
-});
+app.listen(port, () => {
+    console.log(`server is running on ${port}`)
+})
