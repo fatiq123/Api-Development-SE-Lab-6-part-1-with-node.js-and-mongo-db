@@ -98,6 +98,7 @@ app.use(bodyParser.json());
 // apis
 app.use('/api', productRoutes);
 
+
 app.listen(port, () => {
     console.log(`server is running on ${port}`)
 })
